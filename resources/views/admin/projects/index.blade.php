@@ -30,7 +30,7 @@
             <tr>
               <td>{{$project->title}}</td>
               <td>{!!$project->description!!}</td>
-              <td>{{$project->type->name}}</td>
+              <td>{{$project->type?->name ?? '-'}}</td>
               <td>{{$project->github_link}}</td>
               <td>{{$project->other_developers}}</td>
               <td class="d-flex justify-content-between">
